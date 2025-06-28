@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  sandbox:
+    build:
+      # set # project root
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      # context is located @ /workspace
+      - .:/home/devuser/workspace:cached
+    container_name: devSandbox.java
+    ports:
+      - "5005:5005"
+    command: sleep infinity
+    tty: true 
+    user: devuser

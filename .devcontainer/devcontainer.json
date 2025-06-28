@@ -1,0 +1,21 @@
+{
+    "name": "devSandbox.java",
+    
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "sandbox",
+    "workspaceFolder": "/home/devuser/workspace",
+    
+    "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-vscode.remote-containers",
+        "eamodio.gitlens"
+      ]
+    }
+   },
+   "remoteUser": "devuser"
+}
